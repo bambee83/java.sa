@@ -10,6 +10,14 @@ public class Bus extends PublicTransportation {
         super.currentPassenger = 26;
         System.out.println(busNum + "번 버스가 생성되었습니다.");
     }
+    
+    public static void main(String[] args) {
+        Bus bus = new Bus(1234);
+        System.out.println("버스 번호: " + bus.num);
+        System.out.println("최대 승객 수: " + bus.maxPassenger);
+        System.out.println("운행 가격: " + bus.price);
+        System.out.println("현재 승객 수: " + bus.currentPassenger);
+    }
 }
 
 
